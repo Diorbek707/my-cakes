@@ -1,0 +1,16 @@
+:root{--bg:#fff5f7;--card:#fff;--tx:#2a1620;--mu:#86707a;--ac:#c2185b;--bd:#f3dde3;--sh:0 10px 30px rgba(194,24,91,.12);--g:linear-gradient(135deg,#c2185b,#ff6f91)}
+[data-theme=dark]{--bg:#160e12;--card:#241820;--tx:#fbeef2;--mu:#b89aa6;--ac:#ff5c8a;--bd:#3a2630;--sh:0 10px 30px rgba(0,0,0,.45);--g:linear-gradient(135deg,#e0306b,#ff8aa8)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Nunito,sans-serif;background:var(--bg);color:var(--tx);transition:background .3s,color .3s;line-height:1.55;-webkit-tap-highlight-color:transparent}
+h1,h2,h3,.logo{font-family:Fraunces,serif;letter-spacing:-.01em}
+button,input,select{font:inherit;color:inherit}button{cursor:pointer;border:0;background:none}
+input,select{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px 14px;width:100%;outline:0;transition:.2s}
+input:focus,select:focus{border-color:var(--ac);box-shadow:0 0 0 3px color-mix(in srgb,var(--ac) 20%,transparent)}
+.grow{flex:1}.muted{color:var(--mu);font-size:.92rem}.pad{padding:24px}.row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.btn{display:inline-block;background:var(--g);color:#fff;padding:12px 24px;border-radius:14px;font-weight:700;text-decoration:none;box-shadow:0 6px 16px color-mix(in srgb,var(--ac) 35%,transparent);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px color-mix(in srgb,var(--ac) 45%,transparent)}.btn:active{transform:scale(.96)}.btn:disabled{opacity:.5;pointer-events:none}
+.btn.sm{padding:8px 14px;font-size:.85rem;border-radius:11px}.btn.lg{padding:15px 34px;font-size:1.05rem}
+.btn.ghost{background:transparent;color:var(--tx);border:1.5px solid var(--bd);box-shadow:none}.btn.ghost:hover{border-color:var(--ac);color:var(--ac)}
+.btn.danger{background:linear-gradient(135deg,#d62839,#ff5a5f)}.btn.wa{background:linear-gradient(135deg,#128c4a,#25d366);width:100%;padding:14px}
+@keyframes up{from{opacity:0;transform:translateY(18px)}}@keyframes pop{from{transform:scale(0)}}@keyframes fade{from{opacity:0}}
